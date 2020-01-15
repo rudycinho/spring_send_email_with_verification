@@ -19,8 +19,8 @@ public class User {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 
-	@Column(name = "mail_id")
-	private String mailId;
+	@Column(name = "email_id")
+	private String emailId;
 	
 	private String password;
 	
