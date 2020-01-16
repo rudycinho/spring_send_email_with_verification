@@ -14,4 +14,12 @@ public class UserService {
 	public User findByEmailId(String emailId) {
 		return userRepository.findByEmailId(emailId);
 	}
+
+	public void create(User user) {
+		userRepository.save(user);
+	}
+
+	public void update(User user) {
+		userRepository.save(user);
+	}
 }

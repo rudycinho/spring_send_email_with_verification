@@ -12,4 +12,8 @@ public class ConfirmationTokenService {
 	public ConfirmationToken findByConfirmationToken(String confirmationToken) {
 		return confirmationTokenRepository.findByConfirmationToken(confirmationToken);
 	}
+
+	public void create(ConfirmationToken confirmationToken) {
+		confirmationTokenRepository.save(confirmationToken);
+	}
 }
